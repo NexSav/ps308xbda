@@ -1,0 +1,15 @@
+# Redirects for Bronx Dance Academy
+# Format: [old path] [new path] [status code]
+
+# Clean up legacy URLs with encoded characters
+/doe-forms-%26-links    /doe-forms-links    301
+/slt-%26-title-i-pac    /slt-title-i-pac    301
+/calendar-%26-news      /calendar-news      301
+/phone-free-with-yondr-1 /phone-free-yondr   301
+
+# Common aliases
+/about                  /more-about-bda     301
+/apply                  /apply-now          301
+/dance                  /dance-majors       301
+/art                    /art-majors         301
+
