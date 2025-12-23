@@ -17,12 +17,13 @@ export default function MoreAboutBDA() {
         />
 
         {/* Introduction Section */}
-        <section className="py-20 px-4">
+        <section className="py-20 px-4 bg-secondary/30 relative">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/10 rounded-full blur-[100px] -z-10" />
           <div className="container mx-auto max-w-5xl">
             <div className="grid md:grid-cols-2 gap-16 items-start">
               <div className="space-y-6">
                 <h2 className="text-3xl font-bold font-heading text-gray-900">
-                  Small School, <span className="text-primary">Meaningful Relationships.</span>
+                  Small School, <span className="text-primary italic">Meaningful Relationships.</span>
                 </h2>
                 <div className="prose prose-lg text-gray-600 leading-relaxed">
                   <p>
@@ -34,10 +35,10 @@ export default function MoreAboutBDA() {
                 </div>
               </div>
               <div className="relative">
-                <div className="absolute top-0 right-0 w-full h-full bg-secondary rounded-[2rem] transform translate-x-4 translate-y-4 -z-10" />
-                <div className="bg-white p-8 rounded-[2rem] shadow-xl border border-gray-100">
-                  <h3 className="text-xl font-bold font-heading mb-4 flex items-center gap-3">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary">★</span>
+                <div className="absolute top-0 right-0 w-full h-full bg-accent rounded-[2rem] transform translate-x-4 translate-y-4 -z-10" />
+                <div className="bg-white p-8 rounded-[2rem] shadow-xl border-4 border-white">
+                  <h3 className="text-xl font-bold font-heading mb-4 flex items-center gap-3 text-primary">
+                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-white">★</span>
                     At a Glance
                   </h3>
                   <ul className="space-y-4">
@@ -61,7 +62,7 @@ export default function MoreAboutBDA() {
         </section>
 
         {/* Educational Philosophy */}
-        <section className="py-24 bg-secondary relative overflow-hidden">
+        <section className="py-24 bg-white relative overflow-hidden">
           {/* Decorative Elements */}
           <div className="absolute top-0 left-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
@@ -69,7 +70,7 @@ export default function MoreAboutBDA() {
           <div className="container mx-auto max-w-6xl px-4 relative z-10">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold font-heading text-gray-900 mb-4">Our Educational Philosophy</h2>
-              <div className="h-1 w-20 bg-primary mx-auto rounded-full" />
+              <div className="h-1 w-20 bg-accent mx-auto rounded-full" />
             </div>
 
             <div className="grid md:grid-cols-3 gap-8">
@@ -96,11 +97,11 @@ export default function MoreAboutBDA() {
                   desc: "Parents and families are our partners. Through the SLT and PAC, we ensure that the community has a voice in our school's future."
                 }
               ].map((card, i) => (
-                <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
-                  <div className="h-14 w-14 bg-secondary rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                <div key={i} className="bg-[#fdfbf7] p-8 rounded-2xl shadow-sm border-2 border-transparent hover:border-accent hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group">
+                  <div className="h-14 w-14 bg-white rounded-xl flex items-center justify-center text-primary mb-6 shadow-md group-hover:bg-primary group-hover:text-white transition-all group-hover:rotate-6">
                     {card.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">{card.title}</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3 font-heading">{card.title}</h3>
                   <p className="text-gray-600 leading-relaxed">
                     {card.desc}
                   </p>

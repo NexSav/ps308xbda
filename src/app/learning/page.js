@@ -17,7 +17,8 @@ export default function Learning() {
         />
 
         {/* Digital Learning Platforms */}
-        <section className="py-24 px-4 bg-white">
+        <section className="py-24 px-4 bg-white relative">
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-secondary rounded-full blur-[120px] -z-10" />
           <div className="container mx-auto max-w-6xl">
             <div className="text-center mb-16 max-w-3xl mx-auto">
               <span className="text-sm font-bold text-primary tracking-widest uppercase mb-2 block">Technology & Tools</span>

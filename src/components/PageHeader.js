@@ -8,15 +8,15 @@ export default function PageHeader({ title, subtitle, imageSrc }) {
           alt={title}
           className="h-full w-full object-cover"
         />
-        {/* Warm Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
+        {/* Warm Gradient Overlay - Enhanced for School Colors */}
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/40 to-black/80" />
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/noise.png')] opacity-[0.05] mix-blend-overlay"></div>
       </div>
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 mt-20">
         <div className="max-w-4xl space-y-6 animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-md border border-white/20">
+          <div className="inline-flex items-center gap-2 rounded-full bg-black/30 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-md border border-white/20 shadow-lg">
             <img
               src="/assets/images/ps308bda logo.webp"
               alt="BDA Logo"
@@ -25,12 +25,12 @@ export default function PageHeader({ title, subtitle, imageSrc }) {
             <span>Bronx Dance Academy</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-white font-heading leading-tight tracking-tight drop-shadow-sm">
+          <h1 className="text-5xl md:text-7xl font-bold text-white font-heading leading-tight tracking-tight drop-shadow-2xl">
             {title}
           </h1>
           
           {subtitle && (
-            <p className="text-xl text-gray-200 font-light leading-relaxed max-w-2xl drop-shadow-sm border-l-4 border-primary pl-6">
+            <p className="text-xl text-white/90 font-light leading-relaxed max-w-2xl drop-shadow-lg border-l-4 border-accent pl-6">
               {subtitle}
             </p>
           )}
